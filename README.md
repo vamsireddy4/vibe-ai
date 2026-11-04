@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/dj9ecbykc/image/upload/e_trim/v1793716012/Vibe_AI_Minimalist_Logo_kbzcfe.png" alt="Vibe AI" width="260">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://res.cloudinary.com/dj9ecbykc/image/upload/e_make_transparent:10/e_trim/bo_60px_solid_rgb:00000000/e_negate/v1793716012/Vibe_AI_Minimalist_Logo_kbzcfe.png">
+    <img src="https://res.cloudinary.com/dj9ecbykc/image/upload/e_make_transparent:10/e_trim/bo_60px_solid_rgb:00000000/v1793716012/Vibe_AI_Minimalist_Logo_kbzcfe.png" alt="Vibe AI" width="340">
+  </picture>
 </p>
 
 <p align="center">
