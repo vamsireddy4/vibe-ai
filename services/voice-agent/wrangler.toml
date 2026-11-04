@@ -1,0 +1,24 @@
+# The voice agent on Cloudflare (runs with the laptop closed). Secrets: see README / `wrangler secret put`.
+name = "vibe-voice"
+main = "src/worker.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[durable_objects.bindings]]
+name = "CALLS"
+class_name = "CallRoom"
+
+[[durable_objects.bindings]]
+name = "CAMPAIGNS"
+class_name = "CampaignRun"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["CallRoom"]
+
+[[migrations]]
+tag = "v2"
+new_sqlite_classes = ["CampaignRun"]
+
+[observability]
+enabled = true

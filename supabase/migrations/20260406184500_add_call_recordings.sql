@@ -1,0 +1,2 @@
+-- Placeholder migration restored to match remote history.
+-- This migration version already exists on the linked Supabase project.

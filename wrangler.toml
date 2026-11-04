@@ -1,0 +1,9 @@
+# Cloudflare Pages: the built app (dist/) + functions/ (Composio, calendar, voice-agent proxy).
+name = "vibe-ai"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Workers AI binding: only toMarkdown (PDF/DOCX -> text for knowledge files), see functions/api/local/document-text.ts
+[ai]
+binding = "AI"

@@ -1,0 +1,67 @@
+project_id = "ewypjaksviupooxepfez"
+
+[functions.handle-inbound-call]
+verify_jwt = false
+
+[functions.make-outbound-call]
+verify_jwt = false
+
+[functions.list-ultravox-voices]
+verify_jwt = false
+
+[functions.check-calendar-availability]
+verify_jwt = false
+
+[functions.book-calendar-appointment]
+verify_jwt = false
+
+[functions.gemini-voice-bridge]
+verify_jwt = false
+
+[functions.summarize-call]
+verify_jwt = false
+
+[functions.handle-telnyx-webhook]
+verify_jwt = false
+
+[functions.process-knowledge]
+verify_jwt = false
+
+[functions.sync-ultravox-agent]
+verify_jwt = false
+
+[functions.create-agent-tool]
+verify_jwt = false
+
+[functions.delete-ultravox-agent]
+verify_jwt = false
+
+[functions.transfer-call]
+verify_jwt = false
+
+[functions.sarvam-voice-bridge]
+verify_jwt = false
+
+[functions.cloudflare-voice-bridge]
+verify_jwt = false
+
+[functions.handle-twilio-status]
+verify_jwt = false
+
+[functions.list-google-sheets]
+verify_jwt = false
+
+[functions.sync-google-sheet]
+verify_jwt = false
+
+[functions.create-demo-call]
+verify_jwt = false
+
+[functions.finalize-demo-call]
+verify_jwt = false
+
+[functions.sync-call-data]
+verify_jwt = false
+
+[functions.whatsapp-webhook]
+verify_jwt = false
