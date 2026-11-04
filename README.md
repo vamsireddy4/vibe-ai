@@ -23,6 +23,19 @@ Vibe AI lets a business create AI phone agents in minutes. An agent has a voice,
 
 Calls, SMS, WhatsApp and email all run from one workspace, and **Ask Vibe**, the built-in assistant, can find anything or do a task for you ("create an agent for my dental clinic", "call +91… with the booking agent", "which voice does my support agent use?").
 
+## Built during the Meta Global AI Developer Hackathon (Oct 26 – Nov 4, 2026)
+
+Vibe AI started from my own earlier calling dashboard: the web app shell, campaign pages, and the WhatsApp, SMS and CRM integration pages. During the hackathon I rebuilt its AI on Meta's models and built the features below. These are what the demo video shows.
+
+- **Meta voice agent** (`services/voice-agent/`): live phone and browser calls on Muse Spark with Muse Voice Transcribe, streaming replies, over Twilio, Telnyx and the browser. It replaces the old Ultravox, Gemini and Sarvam voice stack, which was removed.
+- **Ask Vibe** (`src/components/AskVibe.tsx`, `services/voice-agent/src/askVibe.ts`): an assistant that drives the app for you. SAM 3.1 finds the button on screen, Muse Spark decides what to press, and it asks before anything that sends, calls or deletes. It also answers questions about your own account.
+- **Tools on calls:** appointment booking (Google Calendar and Cal.com), custom HTTP tools (e.g. n8n), CRM apps through Composio with only safe actions, and call forwarding with fallback numbers.
+- **Knowledge on calls:** agents use their knowledge base (files, websites, text) on every call. Extraction runs on Muse Spark.
+- **After the call:** AI call summaries in History and signed `call.ended` webhooks.
+- **Voices page:** every voice with samples, filters and "Use for agent".
+- **All website AI on Muse Spark:** CSV cleaning, knowledge extraction, prompt writing and summaries. The Gemini code was removed.
+- **Front composer** with Voice added, plus single emails recorded in History.
+
 ## Features
 
 | Area | What you can do |
